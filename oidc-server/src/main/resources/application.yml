@@ -12,8 +12,7 @@ spring:
                 - "refresh_token"
                 - "client_credentials"
               redirect-uris:
-                - "http://127.0.0.1:8080/login/oauth2/code/messaging-client-oidc"
-                - "http://127.0.0.1:8080/authorized"
+                - "http://localhost:8081"
               clientId: a
               clientSecret: b
       client:
@@ -28,7 +27,3 @@ spring:
         provider:
           github:
             user-name-attribute: login
-
-#logging:
-#  level:
-#    org.springframework: trace
