@@ -1,12 +1,14 @@
 spring:
   security:
     oauth2:
+      # noinspection SpellCheckingInspection
       authorizationserver:
         client:
           a:
+            require-proof-key: true
             registration:
               clientAuthenticationMethods:
-                - client_secret_basic
+                - none
               authorization-grant-types:
                 - "authorization_code"
                 - "refresh_token"
